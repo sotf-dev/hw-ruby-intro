@@ -17,6 +17,15 @@ end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  x = 0
+  if arr.empty?
+    return 0
+  else
+    arr.each do |n|
+      x = x + n
+  end
+  return x
+end
 end
 
 def sum_to_n? arr, n
