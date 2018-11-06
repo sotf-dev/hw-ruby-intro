@@ -6,7 +6,7 @@ def sum arr
   # YOUR CODE HERE
   x = 0
   if arr.empty?
-    return 0
+    0
   else
     arr.each do |n|
       x = x + n
@@ -25,7 +25,7 @@ def max_2_sum arr
 
   #Devuelve la suma de sus dos numeros mayores
   if arr.empty?
-    return 0
+    0
   else
     arr.sort!
     m1 = arr.pop
@@ -36,7 +36,7 @@ def max_2_sum arr
   #Para un array vacio debería de devolver 0
   x = 0
   if arr.empty?
-    return 0
+    0
   else
     arr.each do |i|
       x = x + i
