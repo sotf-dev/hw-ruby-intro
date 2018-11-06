@@ -15,7 +15,7 @@ def sum arr
 end
 
 def max_2_sum arr
-  #Para un array array de un solo elemento devolver el elemento
+  #Para un array de un solo elemento devolver el elemento
   if arr.length == 1
     return arr[0]
   end
@@ -43,7 +43,22 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  x = 0
+  if arr.empty?
+    false
+  else
+    if arr.size == 1
+      false
+    else
+      arr.each do |i|
+        if (x = x + i) == n
+          true
+        else
+          false
+        end
+      end
+    end
+  end
 end
 
 # Part 2
