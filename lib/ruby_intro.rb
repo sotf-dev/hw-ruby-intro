@@ -43,20 +43,14 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  x = 0
-  if arr.empty?
+  if arr.size == 0
     false
   else
     if arr.size == 1
       false
     else
-      arr.each do |i|
-        if (x = x + i) == n
-          true
-        else
-          false
-        end
-      end
+      return true if arr.empty? && n.zero?
+      arr.combination(2).any? {|a, b| a + b == n }
     end
   end
 end
