@@ -36,7 +36,7 @@ def max_2_sum arr
   #Para un array vacio debería de devolver 0
   x = 0
   if arr.empty?
-    0
+    x
   else
     arr.each do |i|
       x = x + i
