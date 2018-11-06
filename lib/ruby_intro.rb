@@ -44,11 +44,11 @@ end
 
 def sum_to_n? arr, n
   #Array sum element and compare value with N
-  if arr.size == 0
+  if arr.empty?
     false
   else
-    return true if arr.empty? && n.zero?
-    arr.combination(2).any? {|a, b| a + b == n}
+    # si el array es vacio y la variable contiene 0 return false
+    (arr.empty? && n.zero?) || arr.permutation(2).any? { |a, b| a + b == n }
   end
 end
 
