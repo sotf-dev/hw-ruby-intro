@@ -10,22 +10,29 @@ def sum arr
   else
     arr.each do |n|
       x = x + n
+    end
+    return x
   end
-  return x
-end
 end
 
+# noinspection RubyDeadCode
 def max_2_sum arr
-  # YOUR CODE HERE
+
   #Para un array array de un solo elemento devolver el elemento
   if arr.length == 1
     return arr[0]
   end
+
   #Devuelve la suma de sus dos numeros mayores
-  arr.sort!
-  m1= arr.pop
-  m2= arr.pop
-  return m1 + m2
+  if arr.empty?
+    return 0
+  else
+    arr.sort!
+    m1 = arr.pop
+    m2 = arr.pop
+    return m1 + m2
+  end
+
   #Para un array vacio debería de devolver 0
   x = 0
   if arr.empty?
@@ -34,7 +41,7 @@ def max_2_sum arr
     arr.each do |i|
       x = x + i
     end
-  return x
+    return x
   end
 end
 
