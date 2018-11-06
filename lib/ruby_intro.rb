@@ -10,17 +10,17 @@ def sum arr
     arr.each do |n|
       x = x + n
     end
-    return x
+    x
   end
 end
 
 def max_2_sum arr
-  #Para un array de un solo elemento devolver el elemento
+  #Array return unique element
   if arr.length == 1
     return arr[0]
   end
 
-  #Devuelve la suma de sus dos numeros mayores
+  #Two numbers > return sum
   if arr.empty?
     0
   else
@@ -30,7 +30,7 @@ def max_2_sum arr
     return m1 + m2
   end
 
-  #Para un array vacio debería de devolver 0
+  #Array empty return 0
   x = 0
   if arr.empty?
     x
@@ -38,20 +38,17 @@ def max_2_sum arr
     arr.each do |i|
       x = x + i
     end
-    return x
+    x
   end
 end
 
 def sum_to_n? arr, n
+  #Array sum element and compare value with N
   if arr.size == 0
     false
   else
-    if arr.size == 1
-      false
-    else
-      return true if arr.empty? && n.zero?
-      arr.combination(2).any? {|a, b| a + b == n}
-    end
+    return true if arr.empty? && n.zero?
+    arr.combination(2).any? {|a, b| a + b == n}
   end
 end
 
