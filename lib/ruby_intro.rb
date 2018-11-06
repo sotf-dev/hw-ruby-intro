@@ -50,7 +50,7 @@ def sum_to_n? arr, n
       false
     else
       return true if arr.empty? && n.zero?
-      arr.combination(2).any? {|a, b| a + b == n }
+      arr.combination(2).any? {|a, b| a + b == n}
     end
   end
 end
