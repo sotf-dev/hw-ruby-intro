@@ -3,10 +3,9 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
   x = 0
   if arr.empty?
-    0
+    x
   else
     arr.each do |n|
       x = x + n
@@ -15,9 +14,7 @@ def sum arr
   end
 end
 
-# noinspection RubyDeadCode
 def max_2_sum arr
-
   #Para un array array de un solo elemento devolver el elemento
   if arr.length == 1
     return arr[0]
