@@ -56,6 +56,8 @@ end
 
 def hello(name)
   "Hello, #{name}"
+  #"Hello, "<<name
+  #"Hello, ".concat(name)
 end
 
 def starts_with_consonant? s
