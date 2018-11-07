@@ -60,6 +60,11 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
+  if /^[^aeiouAEIOU\d\W]/i.match(s) == nil
+      false
+    else
+      true
+    end
 end
 
 def binary_multiple_of_4? s
